@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Purhcase</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link href="CSS/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="header">
+      <!--Logo for all webpages-->
+      <img src="images/Logo.jpg" class="logo1" alt="This is the logo">
+    </header>
+    <!--Navigation links-->
+    <section class="Navigation">
+      <nav id="mainNav">
+        <ul>
+          <li><a href="Index.html"><span class="navText">Home</span></a></li>
+          <li><a href="Type.html"><span class="navText">Type </span></a></li>
+          <li><a href="Activities.html"><span class="navText">Activities</span></a></li>
+          <li><a href="Purchase.html"><span class="navText">Purchase</span></a></li>
+          <li><a href="News.html"><span class="navText">News</span></a></li>
+          <li><a href="About.html"><span class="navText">About Us</span></a></li>
+          <li><a href="contactus.html"><span class="navText">Contact us</span></a></li>
+        </ul>
+      </nav>
+      <!--Close Navigation -->
+      <div class="column">
+        <!--Main Image -->
+        <!--The picture is downloaded from the site- https://pixabay.com/images/search/elephant/-->
+        <!--Edited through https://pixlr.com/x/#home-->
+        <img src="images/mainimage1.jpg" alt="main image" class="profile">
+      </div>
+      <!--Scrollable content from https://www.w3schools.in/html-tutorial/marquee-tag/-->
+     
+    </section>
+    <marquee scrollamount="15">Zoo will be open from 08.30Hrs to 18.00Hrs </marquee><br />
+   
+      <h2>Make your day and a difference for Wildlife </h2>
+
+</div>
+      <fieldset>
+        
+        <legend>
+            <h3>Tickets available here</h3>
+          </legend>
+<form id="myForm">
+          
+           
+            <!--coloumbs-->
+            
+            <div class="row1">
+                <div class="coloumn12">
+              <fieldset>
+                <p>
+                    <label for="name" id="Newname"><b>Name :</b></label>
+                    <input type="text" placeholder="Enter name" required>
+                  </p>
+                <p>
+                  <input type="radio" id="DPass"  checked>
+                  <label for="DPass"><b>Day Pass</b></label>
+                </p>
+                <p>
+                  <label for="adults">Adults:</label>
+                  <input type="number" id="DPAdults" name="adults" min="0" max="20" value="1">
+                </p>
+                <p>
+                  <label for="Children">Children:</label>
+                  <input type="number" id="DPChildren" name="Children" min="0" max="30" value="1">
+                </p>
+              </fieldset>
+              <!--For the Student pass-->
+              <fieldset>
+                <p>
+                  <input type="radio" id="SPass" >
+                  <label for="SPass"><b>Student Pass</b></label>
+                </p>
+                <p>
+                  <label for="adults">Adults:</label>
+                  <input type="number" id="SPAdults" name="adults" min="0" max="20" value="0">
+                </p>
+                <p>
+                  <label for="Children">Children:</label>
+                  <input type="number" id="SPChildren" name="Children" min="0" max="30" value="0">
+                </p>
+              </fieldset>
+              <!--For the Foreign pass-->
+              <fieldset>
+                <p>
+                  <input type="radio" id="FPass">
+                  <label for="FPass"><b>Foreign Pass</b></label>
+                </p>
+                <p>
+                  <label for="adults"> Adults:</label>
+                  <input type="number" id="FPAdults" name="adults" min="0" max="20" value="0">
+                </p>
+                <p>
+                  <label for="Children">Children:</label>
+                  <input type="number" id="FPChildren" name="Children" min="0" max="30" value="0">
+                </p>
+              </fieldset>
+              <!--For Add button-->
+    
+              <fieldset>
+                <p>
+                  <label for="Duration"><b>Select Duration:</b></label>
+                  <select id="Duration" name="Duration">
+                    <option value="3">3 hours</option>
+                    <option value="12">1/2 day</option>
+                    <option value="24">Full day </option>
+                    <option value="48">2 Day</option>
+                  </select>
+                </p>
+                <!--Close Navigation -->
+                <p>
+                  <label for="Children"><b>Annual Pass:</b></label>
+                  <input type="number" id="APass" name="APass" min="0" max="30" value="0">
+    
+                  <label for="Children"><b>Food Token:</b></label>
+                  <input type="number" id="Token" name="Token" min="0" max="30" value="0">
+      </fieldset>
+         <!--For Add button-->
+         <p><button id="submit" class="b2 button2">Add to Order</button>
+            <!--Clear button-->
+            <input type="button" onclick="myFunction()" class="b2 button2" value="Clear"><br><br>
+            <button id="Fav" class="b3 button2">Add to Favourites</button>
+            <button id="OFav" class="b3 button2" >Order Favourites</button>
+          </p>
+    </div>
+      <fieldset>
+       
+ <!--coloumn2s-->
+
+</form>
+    <p>
+      <label for="Order"><b>Current Order</b></label>
+      <textarea cols="45" rows="18" id="order">
+                    </textarea>
+    </p>
+    <!--Place order button-->
+    <button id="Purchases" onclick="POrder()" class="button button1">Place Order</button>
+    </p>
+    <img src="images/ticketprice.jpg" class="image" width="400" height="450">
+
+<!--coloumn2s-->
+    </fieldset>
+    </div>
+    </div>
+             <!--coloumns-->
+          </fieldset>
+  
+          <h3 style="text-align: center;">Your contributions will assist in the feeding of an animal.</h3>
+        </fieldset>
+        <fieldset>
+          <h3>Donations</h3>
+
+          <h4>Select amount</h4>
+          <p>
+            <input type="checkbox" id="Dmoney100" name="Dmoney">
+            <label for="Dmoney100">100Lkr</label>
+            <input type="checkbox" id="Dmoney250" name="Dmoney">
+            <label for="Dmoney250">250Lkr</label>
+            <input type="checkbox" id="Dmoney1000" name="Dmoney">
+            <label for="Dmoney1000">1000Lkr</label>
+            <input type="checkbox" id="Dmoney2500" name="Dmoney">
+            <label for="Dmoney2500">2500Lkr</label>
+            <input type="checkbox" id="Dmoney5000" name="Dmoney">
+            <label for="Dmoney5000">5000Lkr</label>
+            <input type="checkbox" id="Dmoney10000" name="Dmoney">
+            <label for="Dmoney10000">10000Lkr</label>
+          </p>
+          <p>
+            <label form="Name"><b>Name :</b></label>
+            <input type="text" class="t1" placeholder="Saman..">
+          </p>
+          <p>
+            <label for="address"><b>Address :</b></label>
+            <textarea class="t2" cols="30" rows="2" id="address" placeholder="Address.." name="address">
+                    </textarea>
+          </p>
+          <p>
+            <label for="Card"><b>Card Number:</b></label>
+            <input type="text" class="t1" placeholder="1111-2222-3333-4444" >
+          </p>
+          <p>
+            <label for="CardPin"><b>CVC:</b></label>
+            <input type="text" class="t1" placeholder="352">
+          </p>
+       
+          <button id="Donate" onclick="Donate()" class="button button1">Donate</button>
+          <img src="images/vsa.png"  alt="Visa" width="65" height="40">
+        </fieldset>
+      </fieldset>
+     
+    </section>
+
+    <footer class="contact-info">
+      <!--Link to contact us page-->
+      <a href="contactus.html">Get in touch with the zoo </a>
+    </footer>
+    <div class="Copyright">&copy;2021 ContactUs-94779851893</div>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
